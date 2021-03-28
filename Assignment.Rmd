@@ -1,0 +1,30 @@
+---
+title: "Untitled"
+author: "Abhay Singh"
+date: "28/03/2021"
+output: slidy_presentation
+---
+
+This peer assessed assignment has two parts. First, you will create a Shiny application and deploy it on Rstudio's servers. Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
+
+***
+Summary of the given Data 
+
+```{r echo=TRUE}
+head(mtcars)
+summary(mtcars)
+```
+
+***
+```{r echo=TRUE}
+library(ggplot2)
+g <- ggplot(mtcars,aes(y = disp, x = mpg))
+g <- g + geom_point() + geom_smooth(method = "lm")
+g
+
+```
+
+***
+
+THANK YOU
+
